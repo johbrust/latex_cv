@@ -1,100 +1,65 @@
-\documentclass{muratcan_cv}
+\documentclass{simple_cv}
 
-\setname{Murat Can}{Karacabey}
-\setaddress{Munich/Germany}
-\setmobile{xx xxx xx xx}
-\setmail{muratcankaracabey@gmail.com}
-\setposition{Work Student} %ignored for now
-\setlinkedinaccount{https://www.linkedin.com/in/murat-can-karacabey-568a96b1/} %you can play with color of the template (red is also nice..)
-\setgithubaccount{https://github.com/muratcankaracabey} %you can play with color of the template (red is also nice..)
-\setthemecolor{red} %you can play with color of the template (red is also nice..)
+\setname{Erika}{Mustermann}
+\setaddress{Heidestraße 17, 51147 Köln}
+\setmobile{+49 123 9876543}
+\setmail{erika@mustermann.de}
+\renewcommand{\arraystretch}{1.35}
+\newcommand\firstcol{3cm}
+\newcommand\secondcol{13.5cm}
 
 \begin{document}
-%Set variables
-%You can add sections, texts, explanations just by copying the style below. Replace the dummy texts "\lipsum[1][x-x]\par" with actual texts.
-%Create header
+% Header
 \headerview
 \vspace{1ex}
-%Sections
-%
-% Summary
-\addblocktext{Summary}{%
-\lipsum[1][1-12]\ %replace this part with actual text
+
+% Abschnitte
+\section{Angaben zur Person}{
+    \indent \footnotesize
+    \begin{longtable}{p{\firstcol}p{\secondcol}}
+        Geburtsdatum, -ort & 12.08.1964, Berlin\\
+        Familienstand & verheiratet
+    \end{longtable}
 }
-%
-%Education
-\section{Education} 
-    \datedexperience{Boğaziçi University}{2013-2018} 
-    \explanation{B.S in Computer Engineering} 
-     \explanationdetail{\coloredbullet\ % 
-     \lipsum[1][3-4]\par %replace this part with actual text
-     }
-    \datedexperience{Technical University of Munich}{2019-2022} 
-    \explanation{M.S in Informatics} 
-    \explanationdetail{\coloredbullet\ %
-     \lipsum[1][3-4]\par %replace this part with actual text
-     }
-%
-% Experience
-\section{Experience}
-    %
-    \datedexperience{Intertech Inc.}{2014-Summer / Turkey} 
-    \explanation{Intern as android developer} 
-    %
-    \datedexperience{Velocity Inc.}{2015-Summer / Turkey} 
-    \explanation{Intern as Developer/Tester} 
-    %
-    \datedexperience{Akbank}{2018-2019 / Turkey} 
-    \explanation{Ios Developer} 
-    \explanationdetail{\coloredbullet\ %
-     \lipsum[1][1-2]\par %replace this part with actual text
-     }
-    %
-    \datedexperience{Mobile-Software AG}{2019-2020 / Germany} 
-    \explanation{Ios Developer} 
-    \explanationdetail{\coloredbullet\ %
-     \lipsum[1][4-5]\par %replace this part with actual text
-     }
-    %
-    \datedexperience{BMW Autonomous Driving Campus}{2020-Now / Germany} 
-    \explanation{Working Student} 
-    \explanationdetail{\coloredbullet\ %
-     \lipsum[1][3-4]\par %replace this part with actual text
-     }
-%
-% Skills
-\section{Skills}
-    %
-    \newcommand{\skillone}{\createskill{Programming Languages}{\textbf{\emph{Experienced:}} \ \  Python \cpshalf Swift \ \ \textbf{\emph{Familiar:}} \ \  Javascript \cpshalf Objective-C \cpshalf Bash \cpshalf Java \cpshalf Scheme}}
-    %
-    \newcommand{\skilltwo}{\createskill{Software Development}{Programming Paradigms \cpshalf GIT \cpshalf CLI \cpshalf Agile Methodology \cpshalf DevOps Lifecycles}}
-    %
-    \newcommand{\skillthree}{\createskill{Frameworks \ \& \ Libraries}{Jupyter \cpshalf Matplotplib \cpshalf Numpy \cpshalf Pandas \cpshalf Scikit-learn \cpshalf Gym \cpshalf PyTorch \cpshalf Tensorflow}}
-    %
-    \newcommand{\skillfour}{\createskill{iOS Programming}{RxSwift \cpshalf PromiseKit \cpshalf CocoaPods \cpshalf Autolayout/DSLs}}
-    %
-    \newcommand{\skillfive}{\createskill{Languages}{\textbf{\emph{Native:}} \ \  Turkish \ \ \textbf{\emph{Fluent:}} \ \ English \ \ \textbf{\emph{Beginner:}} \ \  German }}
-    %
-    \createskills{\skillone, \skilltwo, \skillthree, \skillfour, \skillfive}
-%
-% Experience
-\section{Extra}
-    \newcommand{\extraone}{%
-    \lipsum[1][7-8]\par %replace this part with actual text
-    }
-    %
-    \newcommand{\extratwo}{%
-    \lipsum[1][9-10]\par %replace this part with actual text
-    }
-    %
-    \newcommand{\extrathree}{%
-    \lipsum[1][11-12]%replace this part with actual text
-    }
-    %
-    \newcommand{\listofextras}{\extraone, \extratwo, \extrathree}
-    %
-    \createbullets{\listofextras}
-%
-%Footnote
-\createfootnote
+
+\section{Praktische Tätigkeiten}{
+    \indent \footnotesize
+    \begin{longtable}{p{\firstcol}p{\secondcol}}
+        seit 2019 & \textbf{Geschäftsführung} ErikaMuster GmbH \\
+        2005 - 2019 & \textbf{stellv. Geschäftsführung} bei MaxMuster GmbH \\
+        1995 - 2005 & \textbf{Abteilungsleitung} des Einkaufs bei MaxMuster GmbH \\
+        1983 - 1995 & \textbf{Industriekauffrau} bei MaxMuster GmbH
+        \begin{itemize}
+            \item Einkauf
+            \item Marktanalyse
+        \end{itemize}
+    \end{longtable}
+}
+
+\section{Ausbildung}{
+    \indent \footnotesize
+    \begin{longtable}{p{\firstcol}p{\secondcol}}
+        1983 - 1986 & \textbf{Ausbildung zur Industriekauffrau} bei der MaxMuster GmbH \\
+        1970 - 1983 & Grundschule, Gymnasium
+    \end{longtable}
+}
+
+\section{Zusätzliche Qualifikationen und Kenntnisse}{
+    \indent \footnotesize
+    \begin{longtable}{p{5cm}p{11.5cm}}
+        Fremdsprachen & Englisch (fließend), Französisch (Grundkenntnisse) \\
+        Software und Softwarepakete & Office-Anwendungen, SAP \\
+    \end{longtable}
+}
+
+\section{Sonstiges}{
+    \indent \footnotesize
+    \begin{longtable}{p{\firstcol}p{\secondcol}}
+        2010 & Auszeichnung durch die IHK Köln \\
+        2007 & Handelsblatt Führungskraft des Jahres
+    \end{longtable}
+}
+
+\close{Köln}
+
 \end{document}
